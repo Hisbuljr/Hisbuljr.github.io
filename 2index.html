@@ -1,0 +1,335 @@
+<html></html>
+ <head>
+  <title>
+   myAI Portal
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F5F7FA;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            padding: 20px;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            color: #0056D2;
+            margin-bottom: 40px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 20px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+        .sidebar ul li a.active {
+            color: #0056D2;
+            font-weight: 500;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .header h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info i {
+            font-size: 24px;
+            color: #333;
+            margin-left: 10px;
+        }
+        .profile-card {
+            display: flex;
+            align-items: center;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .profile-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-card .profile-info {
+            flex-grow: 1;
+        }
+        .profile-card .profile-info h3 {
+            font-size: 20px;
+            color: #333;
+            margin: 0;
+        }
+        .profile-card .profile-info p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+        .profile-card .profile-info .contact-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .profile-card .profile-info .contact-info i {
+            font-size: 18px;
+            color: #333;
+            margin-right: 10px;
+        }
+        .profile-card .profile-info .contact-info span {
+            font-size: 16px;
+            color: #333;
+            margin-right: 20px;
+        }
+        .profile-card .profile-info .contact-info .verified {
+            color: #28A745;
+        }
+        .profile-card .profile-info .contact-info .not-verified {
+            color: #DC3545;
+        }
+        .section {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section h4 {
+            font-size: 18px;
+            color: #333;
+            margin: 0 0 20px 0;
+        }
+        .section .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        .section .item:last-child {
+            border-bottom: none;
+        }
+        .section .item i {
+            font-size: 18px;
+            color: #333;
+            margin-right: 10px;
+        }
+        .section .item span {
+            font-size: 16px;
+            color: #333;
+        }
+        .section .item a {
+            text-decoration: none;
+            color: #0056D2;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .footer img {
+            width: 100px;
+            margin-top: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="sidebar">
+    <h1>
+     myAI Portal
+    </h1>
+    <ul>
+     <li>
+        <a class="fas fa-home"> <a href="mainpage.html">Beranda</a>
+     </a> 
+      </a>
+     </li>
+     <li>
+      <a class="active" href="#">
+       <i class="fas fa-user">
+       </i>
+       Akun
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <i class="fas fa-bullhorn">
+       </i>
+       Pengumuman
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="content">
+    <div class="header">
+     <h2>
+      Akun
+     </h2>
+     <div class="user-info">
+      <span>
+       ID
+      </span>
+      <i class="fas fa-user-circle">
+      </i>
+     </div>
+    </div>
+    <div class="profile-card">
+     <img alt="Profile picture" height="80" src="https://storage.googleapis.com/a1aa/image/S7KmezOthYW6D66n9vmgSTRLCXJtxfWG0nm3C4JtBIBeKeWOB.jpg" width="80"/>
+     <div class="profile-info">
+      <h3>
+       Hisbullah Rafi Dzaky
+      </h3>
+      <p>
+       Mahasiswa
+      </p>
+      <div class="contact-info">
+       <i class="fas fa-id-badge">
+       </i>
+       <span>
+        5054231002
+       </span>
+       <i class="fas fa-phone">
+       </i>
+       <span class="not-verified">
+        Belum diatur
+       </span>
+       <i class="fas fa-envelope">
+       </i>
+       <span class="verified">
+        hisbullahrafi@gmail.com
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="section">
+     <h4>
+      Informasi pribadi
+     </h4>
+     <div class="item">
+      <div>
+       <i class="fas fa-font">
+       </i>
+       <span>
+        Nama
+       </span>
+      </div>
+      <a href="#">
+       Ubah nama lengkap dan nama panggilan
+      </a>
+     </div>
+     <div class="item">
+      <div>
+       <i class="fas fa-calendar-alt">
+       </i>
+       <span>
+        Tanggal Lahir
+       </span>
+      </div>
+      <a href="#">
+       Lihat tanggal lahir
+      </a>
+     </div>
+    </div>
+    <div class="section">
+     <h4>
+      Kontak
+     </h4>
+     <div class="item">
+      <div>
+       <i class="fas fa-envelope">
+       </i>
+       <span>
+        Email
+       </span>
+      </div>
+      <a href="#">
+       Perbarui dan verifikasi email
+      </a>
+     </div>
+     <div class="item">
+      <div>
+       <i class="fas fa-phone">
+       </i>
+       <span>
+        Nomor Ponsel
+       </span>
+      </div>
+      <a href="#">
+       Perbarui dan verifikasi nomor telepon
+      </a>
+     </div>
+    </div>
+    <div class="section">
+     <h4>
+      Lainnya
+     </h4>
+     <div class="item">
+      <div>
+       <i class="fas fa-key">
+       </i>
+       <span>
+        Kata Sandi
+       </span>
+      </div>
+      <a href="#">
+       Perbarui kata sandi
+      </a>
+     </div>
+     <div class="item">
+      <div>
+       <i class="fas fa-cog">
+       </i>
+       <span>
+        Pengaturan Web
+       </span>
+      </div>
+      <a href="#">
+       Sesuaikan preferensi tampilan
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   Hak Cipta © 2024 AI Engineer Institut Teknologi Sepuluh Nopember
+   <br/>
+   <img alt="ITS logo" height="50" src="https://storage.googleapis.com/a1aa/image/wPPI75obvIJ1AZtW4a4RMaSU9FfU01u5oXI5WQUI6XfdFvlTA.jpg" width="100"/>
+  </div>
+ </body>
+</html>
